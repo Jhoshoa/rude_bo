@@ -68,13 +68,12 @@ export class Student {
   @Column({ name: 'tiene_discapacidad' })
   tieneDiscapacidad: boolean;
 
-  @Column({ name: 'num_registro_discapacidad' })
+  @Column({ name: 'num_registro_discapacidad', nullable: true })
   numRegistroDiscapacidad: number;
 
-  @Column({ name: 'tipo_discapacidad' })
+  @Column({ name: 'tipo_discapacidad', nullable: true })
   tipoDiscapacidad: string;
 
-  @Column({ name: 'grado_discapacidad' })
+  @Column({ name: 'grado_discapacidad', nullable: true })
   gradoDiscapacidad: string;
 }
-
